@@ -1,0 +1,77 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{CERT}-{YYYY}-{###}",
+ "creation": "2025-11-24 16:14:02.045935",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "acknowledgment_section",
+  "event",
+  "issue_date",
+  "column_break_ubqq",
+  "participant",
+  "certificate_html"
+ ],
+ "fields": [
+  {
+   "fieldname": "event",
+   "fieldtype": "Link",
+   "label": "Event",
+   "options": "Event Doctype"
+  },
+  {
+   "fieldname": "participant",
+   "fieldtype": "Link",
+   "label": "Participant",
+   "options": "Participants Doctype"
+  },
+  {
+   "fieldname": "column_break_ubqq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "issue_date",
+   "fieldtype": "Date",
+   "label": "Issue Date"
+  },
+  {
+   "fieldname": "certificate_html",
+   "fieldtype": "Text Editor",
+   "label": "Certificate HTML"
+  },
+  {
+   "fieldname": "acknowledgment_section",
+   "fieldtype": "Section Break",
+   "label": "acknowledgment"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-11-24 17:19:20.073313",
+ "modified_by": "Administrator",
+ "module": "Hub",
+ "name": "Event Certificate Doctype",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

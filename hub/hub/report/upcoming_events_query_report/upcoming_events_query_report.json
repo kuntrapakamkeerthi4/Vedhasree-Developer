@@ -1,0 +1,30 @@
+{
+ "add_total_row": 0,
+ "add_translate_data": 0,
+ "columns": [],
+ "creation": "2025-11-24 19:00:52.592601",
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "letter_head": "Library  Letter Head",
+ "letterhead": null,
+ "modified": "2025-11-24 19:29:51.846856",
+ "modified_by": "Administrator",
+ "module": "Hub",
+ "name": "Upcoming Events Query Report",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "query": "SELECT\r\n    event_name AS \"Event Name:Data\",\r\n    start_date AS \"Start Date:Date\",\r\n    end_date AS \"End Date:Date\",\r\n    capacity AS \"Capacity:Int\",\r\n    registered AS \"Registered:Int\"\r\nFROM\r\n    `tabEvent Doctype`\r\nWHERE\r\n    start_date >= CURDATE()\r\nORDER BY\r\n    start_date ASC;\r\n\r\n\r\n\r\n\r\n",
+ "ref_doctype": "Event Doctype",
+ "report_name": "Upcoming Events Query Report",
+ "report_type": "Query Report",
+ "roles": [
+  {
+   "role": "System Manager"
+  }
+ ],
+ "timeout": 0
+}

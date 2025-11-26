@@ -1,0 +1,127 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:{EVT}-{event_name}-{MM}-{YYYY}-{###}",
+ "creation": "2025-11-24 16:00:35.392024",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "core_details_section",
+  "event_name",
+  "start_date",
+  "venue",
+  "status",
+  "registered",
+  "utilization",
+  "column_break_rptz",
+  "event_code",
+  "end_date",
+  "capacity",
+  "description",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "event_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Event Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "event_code",
+   "fieldtype": "Data",
+   "label": "Event Code"
+  },
+  {
+   "fieldname": "column_break_rptz",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Date",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Date",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "venue",
+   "fieldtype": "Data",
+   "label": "Venue"
+  },
+  {
+   "fieldname": "capacity",
+   "fieldtype": "Data",
+   "label": "Capacity"
+  },
+  {
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "Status",
+   "options": "Select\nPlanned\nOpen\nFull\nCompleted"
+  },
+  {
+   "description": "Details about event",
+   "fieldname": "description",
+   "fieldtype": "Small Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "core_details_section",
+   "fieldtype": "Section Break",
+   "label": "core details"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Event Doctype",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "registered",
+   "fieldtype": "Int",
+   "label": "Registered"
+  },
+  {
+   "fieldname": "utilization",
+   "fieldtype": "Percent",
+   "label": "Utilization"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-11-24 17:32:19.041842",
+ "modified_by": "Administrator",
+ "module": "Hub",
+ "name": "Event Doctype",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
